@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: rgb(41, 68, 71);
+}
+
+.game {
+  opacity: 1;
+}
+
+/* Restart Button */
+.Restart {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+}
+
+.Restart .push-restart {
+  background-color: #3bb78f;
+  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+  font-family: sans-serif;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.score {
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+.player-score,
+.computer-score {
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.score p {
+  font-size: 40px;
+  padding-top: 15px;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+}
+
+.options {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.player-options {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+.computer-options {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  pointer-events: none;
+}
+
+/* Message */
+
+.message-opt h2 {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  word-spacing: 15px;
+  position: absolute;
+  top: 30%;
+  right: 40%;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  cursor: none;
+  pointer-events: none;
+}
+
+/* Next Button  */
+
+.nextBtn {
+  background-color: #3bb78f;
+  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+  font-family: sans-serif;
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-size: 30px;
+  color: black;
+}
+
+.next {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.disable {
+  pointer-events: none;
+}
